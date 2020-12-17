@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net5</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Folder Include="Interfaces\" />
+		<Folder Include="NewFolder\" />
+		<Folder Include="Parameters\" />
+		<Folder Include="Responses\" />
+	</ItemGroup>
+
+</Project>
