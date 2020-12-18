@@ -1,7 +1,7 @@
 # ContextualWebSearch C# Client
 
 <div align="justify">
-    ![alt text](logo.png "Logo")
+    ![alt text](./logo.png "Logo")
 </div>
 
 I wanted to use the free [ContextualWebSearch API](https://contextualweb.io/) and I realized that C# had no apparent client. If there is and I missed it... **Oh well**.  
