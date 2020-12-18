@@ -5,7 +5,11 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<Folder Include="Interfaces\" />
+		<Compile Remove="ContextualHttpClient.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="../ContextualWebSearchClient.Core/ContextualWebSearchClient.Core.csproj" />
 	</ItemGroup>
 
 </Project>
