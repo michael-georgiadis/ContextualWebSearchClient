@@ -3,6 +3,9 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+# Ignore appsettings.test.json from ContextualWebSearchClient.Tests
+tests/ContextualWebSearchClient.Tests/appsettings.test.json
+
 # User-specific files
 *.rsuser
 *.suo
