@@ -1,7 +1,7 @@
 # ContextualWebSearch C# Client
 
 <div align="center">
-    <img height=400 width=500 src="./logo.png" />
+    <img height=400 width=450 src="./logo.png" />
 </div>
 
 I wanted to use the free [ContextualWebSearch API](https://contextualweb.io/) and I realized that C# had no apparent client. If there is and I missed it... **Oh well**.  
