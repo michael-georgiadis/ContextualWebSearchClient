@@ -17,5 +17,10 @@ namespace ContextualWebSearchClient.Helpers.Extensions
 
             return str;
         }
+
+        public static string ToUri(this string str)
+        {
+            return str.Replace(" ", "%20");
+        }
     }
 }

@@ -8,9 +8,9 @@ namespace ContextualWebSearchClient.Helpers.Statics
 {
     public static class StringStatics
     {
-        public static string GenerateUrlQueryFrom<T>(T paramObject)
-        {
+        //public static string GenerateUrlQueryFrom<T>(T paramObject)
+        //{
 
-        }
+        //}
     }
 }
