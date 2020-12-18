@@ -1,10 +1,11 @@
-﻿using System;
+﻿using ContextualWebSearchClient.Request.Url;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 // using ContextualWebSearchClient.Extensions;
 using System.Web;
 
-namespace ContextualWebSearchClient.Parameters.Url.Optional
+namespace ContextualWebSearchClient.Request.Url.Optional
 {
     public class NewsOptionalParameters : AbstractParameters
     {

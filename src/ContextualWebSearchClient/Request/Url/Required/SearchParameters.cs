@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ContextualWebSearchClient.Parameters.Url.Required
+namespace ContextualWebSearchClient.Request.Url.Required
 {
-    public class RequiredParameters : AbstractParameters
+    public class SearchParameters : AbstractParameters
     {
+        public string Query { get; set; }
         public int PageNumber { get; set; } = 1;
 
         private int _pageSize = 10;
@@ -20,11 +21,12 @@ namespace ContextualWebSearchClient.Parameters.Url.Required
                     _pageSize = value;
                 else
                     throw new ArgumentOutOfRangeException("PageNumber",
-                        new Exception("PageSize must be between 1 and 50"));
+                        new Exception("Must be between 1 and 50"));
             }
         }
 
         public bool AutoCorrect { get; set; } = true;
 
+        public SearchParameters(string query) => Query = query;
     }
 }

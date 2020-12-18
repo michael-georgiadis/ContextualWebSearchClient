@@ -1,4 +1,4 @@
-﻿namespace ContextualWebSearchClient.Parameters.Url.Optional
+﻿namespace ContextualWebSearchClient.Request.Url.Optional
 {
     public class WebAndImageOptionalParameters : AbstractParameters
     {
