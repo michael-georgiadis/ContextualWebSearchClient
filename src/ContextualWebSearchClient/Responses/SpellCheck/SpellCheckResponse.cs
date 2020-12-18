@@ -1,13 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Net;
+using System.Text.Json.Serialization;
 
 namespace ContextualWebSearchClient.Responses.SpellCheck
 {
     class SpellCheckResponse
     {
+        [JsonIgnore]
+        public HttpStatusCode Status { get; set; }
         public string Response { get; set; }
     }
 }
