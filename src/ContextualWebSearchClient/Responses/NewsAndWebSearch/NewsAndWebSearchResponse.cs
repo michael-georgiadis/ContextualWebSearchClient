@@ -1,13 +1,12 @@
 ﻿using System.Collections.Generic;
 using System.Text.Json.Serialization;
 using System.Net;
+using ContextualWebSearchClient.Core.Response;
 
 namespace ContextualWebSearchClient.Responses.NewsAndWebSearch
 {
-    public class NewsAndWebSearchResponse
+    public class NewsAndWebSearchResponse : BaseResponse
     {
-        [JsonIgnore]
-        public HttpStatusCode Status { get; set; }
 
         [JsonInclude]
         [JsonPropertyName("_type")]
