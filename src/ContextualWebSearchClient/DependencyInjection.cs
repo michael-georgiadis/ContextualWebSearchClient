@@ -10,10 +10,10 @@ namespace ContextualWebSearchClient
     {
         public static IServiceCollection AddContextectualNewsApiClient(this IServiceCollection services, string apiKey)
         {
-            var newsApiClient = new ContextualNewsApiClient(apiKey);
+            var newsApiClient = new ContextualWebSearchClient(apiKey);
 
             return services.AddSingleton<IContextualNewsApiClient>(sp =>
-                new ContextualNewsApiClient(apiKey));
+                new ContextualWebSearchClient(apiKey));
         }
     }
 }

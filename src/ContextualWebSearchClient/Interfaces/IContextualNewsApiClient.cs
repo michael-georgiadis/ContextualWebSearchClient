@@ -9,10 +9,10 @@ namespace ContextualWebSearchClient.Interfaces
 {
     public interface IContextualNewsApiClient
     {
-        Task<NewsAndWebSearchResponse> GetNews(SearchParameters searchParameters, NewsOptionalParameters optionalParameters);
+        Task<NewsAndWebSearchResponse> NewsSearch(SearchParameters searchParameters, NewsOptionalParameters optionalParameters);
 
-        Task<NewsAndWebSearchResponse> GetNews(SearchParameters searchParameters);
+        Task<NewsAndWebSearchResponse> NewsSearch(SearchParameters searchParameters);
 
-        Task<NewsAndWebSearchResponse> GetNews(string query);
+        Task<NewsAndWebSearchResponse> NewsSearch(string query);
     }
 }
