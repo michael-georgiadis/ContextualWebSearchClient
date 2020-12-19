@@ -13,12 +13,13 @@ namespace ContextualWebSearchClient.Core.Request
         public override string ToString() =>
               string.Join("&", GetType()
                 .GetProperties()
-                .Where(property => property.GetValue(this) != null)
+                .Where(property => property.GetValue(this) is not null)
                 .Select(property => string.Format(
                         "{0}={1}",
                         HttpUtility.UrlEncode(property.Name == "Query"
                             ? "q"
                             : property.Name.ToCamelcase()),
-                        Uri.EscapeUriString(property.GetValue(this).ToString()))));
+                        Uri.EscapeUriString(property.GetValue(this).ToString())))
+                  );
     }
 }
