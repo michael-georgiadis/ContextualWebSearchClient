@@ -20,10 +20,17 @@ namespace ContextualWebSearchClient.Core
             DefaultRequestHeaders.Add("x-rapidapi-host", host);
         }
 
-        public Uri BuildUri(string type, string controller, string parameters)
-        {
-            return new Uri($"https://{host}/api/{type}/{controller}?{parameters}");
-        }
+        //public Uri BuildUri(string type, string controller, string parameters)
+        //{
+        //    return new Uri($"https://{host}/api/{type}/{controller}?{parameters}");
+        //}
+
+        public HttpRequestMessage BuildRequestMessage(string type, string controller, string parameters) =>
+            new HttpRequestMessage
+            {
+                Method = HttpMethod.Get,
+                RequestUri = new Uri($"https://{host}/api/{type}/{controller}?{parameters}")
+            };
 
         public override HttpResponseMessage Send(HttpRequestMessage request, CancellationToken cancellationToken)
         {
