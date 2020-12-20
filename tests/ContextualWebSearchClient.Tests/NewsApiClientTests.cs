@@ -16,13 +16,12 @@ namespace ContextualWebSearchClient.Tests
 
 
         public NewsApiClientTests() : base() =>
-
             _newApiClient = new ContextualWebSearchClient(Config["ContextualApiKey"]);
 
 
         [Theory]
         [MemberData(nameof(NewsApiRequestData.SimpleQueryRequest), MemberType = typeof(NewsApiRequestData))]
-        public async Task JustTextQuery(string query)
+        public async Task TextTest(string query)
         {
             var response = await _newApiClient.NewsSearch(query);
 
@@ -35,7 +34,7 @@ namespace ContextualWebSearchClient.Tests
 
         [Theory]
         [MemberData(nameof(NewsApiRequestData.RequiredParamatersRequest), MemberType = typeof(NewsApiRequestData))]
-        public async Task RequiredParamatersQueryRequest(SearchParameters searchParamaters)
+        public async Task RequiredTest(SearchParameters searchParamaters)
         {
             var response = await _newApiClient.NewsSearch(searchParamaters);
 
@@ -52,8 +51,10 @@ namespace ContextualWebSearchClient.Tests
 
         [Theory]
         [MemberData(nameof(NewsApiRequestData.RequiredAndOptionalParametersRequest), MemberType = typeof(NewsApiRequestData))]
-        public async Task RequiredAndOptionalParametersQueryRequest(SearchParameters searchParameters, NewsOptionalParameters optionalParameters)
+        public async Task RequiredOptionalTest(SearchParameters searchParameters, NewsOptionalParameters optionalParameters)
         {
+            var response2 = await _newApiClient.NewsSearch("Donald Trump");
+
             var response = await _newApiClient.NewsSearch(searchParameters, optionalParameters);
 
             response.Status
