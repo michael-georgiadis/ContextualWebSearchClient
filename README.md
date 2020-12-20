@@ -18,4 +18,4 @@ It also supports Microsoft's Dependency Injection. It adds the clients as Single
 
 ## More Information
 
-The folder Docs contains all you need to know about the library.
+The folder [Docs](https://github.com/Funnyman420/ContextualWebSearchClient/tree/master/docs) contains all you need to know about the library.
