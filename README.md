@@ -14,8 +14,6 @@ The API consists of 5 types of functionalities and naturally, so does my client.
 * Spell Check
 * Web Search
 
-It also supports Microsoft's Dependency Injection. It adds the clients as Singleton by default, but the interfaces and classes are provided so you can implement Transients and Scoped's, if you think that it suits your use-case better.
-
 ## More Information
 
 The folder [Docs](https://github.com/Funnyman420/ContextualWebSearchClient/tree/master/docs) contains all you need to know about the library.
